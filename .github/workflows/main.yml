@@ -32,13 +32,13 @@ jobs:
           cmd: install # npm install/ yarn install
         
       - name: Creating build
-        run: npm build
+        run: yarn build
 
       - name: Surge
         run: npm install -g surge
        
       - name: Deploy on surge
-        run: surge ./ http://demo-app-props-practice.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./build http://demo-app-props-practice.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
 
         
         
