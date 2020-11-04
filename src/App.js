@@ -1,4 +1,3 @@
-
 import Dinner from './Dinner'
 
 function App() {
