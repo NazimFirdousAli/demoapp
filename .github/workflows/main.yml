@@ -29,12 +29,12 @@ jobs:
       - name: Install npm
         run: npm install
         
+      - name: Creating build
+        run: npm build
+
       - name: Surge
         run: npm install -g surge
        
-      - name: Creating build
-        run: npm build
-      
       - name: Deploy on surge
         run: surge ./build https://demo-app-props-practice.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
         
