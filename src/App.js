@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import Dinner from './Dinner'
 
 function App() {
