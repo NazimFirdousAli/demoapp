@@ -39,7 +39,8 @@ jobs:
         run: npm install -g surge
        
       - name: Deploy on surge
-        run: surge ./build https://demo-app-props-practice.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./ https://demo-app-props-practice.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+
         
         
        
