@@ -39,7 +39,7 @@ jobs:
         run: npm install -g surge
        
       - name: Deploy on surge
-        run: surge ./ faithful-powder.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./ http://faithful-powder.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
 
         
         
